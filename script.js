@@ -23,8 +23,11 @@ function generateTable() {
       currentSetId = columns[5];
       currentColumn7 = columns[6];
       tableData.push(columns);
-    } else if (columns[0].match(/^\d/)) {
-      // Line starts with a number, apply rearrangement logic
+    } else if (
+      !columns[0].startsWith('SET_ID') &&
+      !columns[0].startsWith('ASSET_ID')
+    ) {
+      // Line doesn't start with SET_ID or ASSET_ID, apply rearrangement logic
       rearrangedTableData.push([
         currentColumn7,
         columns[6],
