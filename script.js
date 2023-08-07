@@ -143,8 +143,8 @@ function createThirdTableData(tableData) {
         rowData[1], // Column 2
         '\u00A0', // Column 3 (empty for now)
         '\u00A0', // Column 4 (empty for now)
-        storage, // Column 5 (empty for now)
-        '\u00A0', // Column 6 (empty for now)
+        '\u00A0', // Column 5 (empty for now)
+        storage, // Column 6 (storage location)
         '\u00A0', // Column 7 (empty for now)
         '\u00A0', // Column 8 (empty for now)
         '\u00A0', // Column 9 (empty for now)
